@@ -3,15 +3,18 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Cards from './components/Cards'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header />
+      <Routes>
+        <Route path='/' element={<div><Header />
       <Footer />
-      <Cards />
+      <Cards /></div>} />
+      </Routes>
     </>
   )
 }

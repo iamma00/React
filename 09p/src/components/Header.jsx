@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
     <>
+    <Link to='/'></Link>
     <header>
         <h1>My Website </h1>
         <nav>
